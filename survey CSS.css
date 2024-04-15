@@ -1,0 +1,97 @@
+body {
+    background-image: url(bg.png);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 5px;
+    margin-top: 20px;
+}   
+
+.a {
+    margin-top: 5px;
+}
+
+h1 {
+    font-size: 50px;
+    margin-bottom: 5px;
+    margin-top: 15px;   
+    background: linear-gradient(to right, #036500 25%, #00C154 70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.box {
+    width: 500px;
+    margin: auto;
+    padding: 20px;
+    border-width: 2px;
+    border-color: black;
+    border-style: solid;
+    background-color: white;
+}
+
+input {
+    width: 450px;
+    height: 35px;
+    margin-bottom: 1px;
+    background-color: #00C154;
+    border-color:black;
+    border-style: solid;
+    border-width: 1.5px;
+    font-size: 16px;
+}
+
+@keyframes big {
+    from {
+    height: 35px;
+    width: 450px;
+}
+    to {
+    height: 50px;
+    width: 490px;
+}
+
+}
+
+input:hover {
+    background-color: #036500;
+    color: white;
+}
+
+input:focus {
+    background-color: #036500;
+    color: white;
+    animation-name: big;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+
+::placeholder {
+    color: white;
+    font-size: 16px;
+}
+
+button {
+    font-size: 18px;
+    width: 80px;
+    height: 30px;
+    color: white;
+    background: linear-gradient(to right, #036500 25%, #00C154 70%);
+    border: black, 1px;
+    border-radius: 20px;
+    border-style:solid;
+    transition: 1s ease;
+}
+
+button:hover {
+    background: #00C154;
+    color: black;
+    height: 40px;
+    width:  100px;
+}
